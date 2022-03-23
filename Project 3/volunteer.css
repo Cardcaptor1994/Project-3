@@ -1,0 +1,62 @@
+img{
+    margin-top: -50px;
+
+}
+.container {
+    position: relative;
+    text-align: left;
+    
+  }
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+    position: relative;
+    left: 205px;
+     top: 50px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+ .column1 {
+  float: left;
+  width: 25%;
+  padding: 70px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.one:hover .overlay-effect, .two:hover .overlay-effect, .three:hover .overlay-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff8c00;
+  overflow:hidden;
+}
+.header1{
+  text-align: center;
+  font-size: 100px;
+}
